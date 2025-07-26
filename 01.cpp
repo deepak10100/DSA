@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-cout<<"namaste duniya"<<endl;
+int main()
+{
+    cout<<"Deepak"<<endl;
+    return 0;
 }
