@@ -2,6 +2,14 @@
 using namespace std;
 int main()
 {
-    cout<<"Deepak"<<endl;
+    int a;
+    cin>>a;
+    if (a%2 ==0)
+    {
+        cout<<"Even";
+    }else{
+        cout<<"odd";
+    }
+    
     return 0;
 }
