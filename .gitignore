@@ -1,0 +1,32 @@
+# Ignore compiled binary files
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.lib
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.log
+*.swp
+*.swo
+*~
+
+# Build and cache files
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# macOS and system files
+.DS_Store
+
+# Others
+/testbin/
+core
+*.core
