@@ -5,7 +5,6 @@ int main(int argc, char const *argv[])
 {
     int n;
     cout<<"Enter the number ";
-    cout<<"Deep";
     cin>>n;
     int i =1;
     while (i<=n)
