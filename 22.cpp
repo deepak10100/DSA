@@ -2,7 +2,7 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    int x = 12;
-    cout<<x;
+    int age;
+    
     return 0;
 }
