@@ -136,6 +136,48 @@ int main(int argc, char const *argv[])
     // {
     //     cout<<number[i]<<endl;
     // }
+    // char name[7]="Deepak";
+    // cout<<name;
+    // int arr[5]={1,2,3,4,5};
+    // int arr1[]={1,2,3,4,5,6,7,8,9};
+    // arr1[3]=3;
+    // cout<<arr1[3];
+
+    // int arr[5];
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cin>>arr[i];
+    // }
+
+    // int matrix[2][3]={
+    //     {1,2,3},
+    //     {4,5,6}
+    // };
+    // cout<<matrix[1][2];
+
+    // char name[10];
+    // cin>>name;
+    // cout<<name;
+    
+    // string name ="my name is deepak";
+    // cout<<name.at(2);
+    
+    // for (int i = 10; i >= 1; i--)
+    // {
+    //     cout<<i<<endl;
+    // }
+    // for (int i = 0; i < 10; i+=2)
+    // {
+    //     cout<<i<<endl;
+    // }
+    // int i = 1;
+    // while (i<10)
+    // {
+    //     cout<<i<<endl;
+    //     i++;
+    // }
+    
+    
     
     
 
