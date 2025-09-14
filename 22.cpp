@@ -1,185 +1,150 @@
 #include <iostream>
 using namespace std;
+
+// int add(int a, int b)
+// {
+//     return a+b;
+// }
+// void printname(string name){
+//     cout<<"my name is "<<name;
+// }
+class bankAccount
+    {        
+    public:
+        string name;
+        int balance;
+        
+        void deposit(int amount) {
+            balance += amount;
+            cout<<"desposit "<<amount;
+        }
+
+        void showbalance(){
+            cout<<"balance is "<<balance;
+        }
+       
+    };
 int main(int argc, char const *argv[])
 {
+    bankAccount bcc;
+    bcc.name="deepak";
+    bcc.balance=100;
+    bcc.deposit(500);
+    bcc.showbalance();
+    // printname("deepak");
+    // cout<<add(1,6);
+    // cout<<"hello world";
+    // string name;
     // int age;
+    // cout<<"Enter the name: ";
+    // cin>>name;
+    // cout<<"Enter the age :";
     // cin>>age;
+    // cout<<"hello, "<<name<<" you are "<<age<<" year old"<<endl;
+    // string name;
+    // string city;
+    // int age;
+    // cout<<"Enter the name "<<endl;
+    // cin>>name;
+    // cout<<"Enter the age "<<endl;
+    // cin>>age;
+    // cout<<"Enter the city "<<endl;
+    // cin>>city;
+    // cout<<"My name is "<<name<<endl;
+    // cout<<"I live in "<<city<<endl;
+    // cout<<"I am "<<age<<" year old"<<endl;
+    // int a =2;
+    // int b =3;
+    // cout<<(a!=b);
+    // return 0;
+    // int age=10;
     // if (age>18)
     // {
-    //     cout<<"you are adult";
-    // }else if(age<10){
-    //     cout<<"you are not adult";
-    // }
-
-    // int mark;
-    // cin >> mark;
-    // if (mark >= 80 && mark <= 100)
-    // {
-    //     cout << "A";
-    // }
-    // else if (mark >= 60 && mark <= 79)
-    // {
-    //     cout << "B";
-    // }
-    // else if (mark >= 50 && mark <= 59)
-    // {
-    //     cout << "C";
-    // }
-    // else if (mark >= 45 && mark <= 49)
-    // {
-    //     cout << "D";
-    // }
-    // else if (mark >= 25 && mark <= 44)
-    // {
-    //     cout << "E";
-    // }
-    // else 
-    // {
-    //     cout << "F";
-    // }
-
-    // int age;
-    // cin>>age;
-    // if (age<18)
-    // {
-    //     cout<<"not eligable for job";
-    // }
-    // else if (age>=18 && age<=54)
-    // {
-    //     cout<<"eligable for job";
-    // }
-    // else if (age>=55 && age<=57)
-    // {
-    //     cout<<"eligable for job but retirement soon";
-    // }
-    // else if (age>57)
-    // {
-    //     cout<<"retirement time";
-    // }
-    
-    // int num;
-    // cin>>num;
-    // if (num>=0)
-    // {
-    //    if (num==0)
-    //    {
-    //     cout<<"zero";
-    //    }else{
-    //     cout<<"positive";
-    //    }
-       
+    //     cout<<"You are eligible to vote.";
     // }else{
-    //     cout<<"negative";
+    //     cout<<"Not";
     // }
     
-    // char op;
-    // int num1;
-    // int num2;
-    // cout<<"Enter the number 1 ";
-    // cin>>num1;
-    // cout<<"Enter the number 2 ";
-    // cin>>num2;
-    // cout<<"Enter the operator ";
-    // cin>>op;
-    // if (op=='+')
+    // int mark = 55;
+    // if (mark>=90)
     // {
-    //     cout<<"the sum is "<<num1+num2;
-    // }else if (op=='-')
+    //     cout<<"A";
+    // }else if (mark>=70)
     // {
-    //     cout<<"the substract is "<<num1-num2;
-    // }else if (op =='*')
+    //     cout<<"B";
+    // }else if (mark>=60)
     // {
-    //     cout<<"the mul is "<<num1*num2;
+    //     cout<<"C";
+    // }else if (mark>=50)
+    // {
+    //     cout<<"D";
     // }else{
-    //     cout<<"invalid input";
+    //     cout<<"F";
     // }
     
-    // int num1;
-    // int num2;
-    // int num3;
-
-    // cin>>num1;
-    // cin>>num2;
-    // cin>>num3;
-
-    // if (num1>num2)
-    // {
-    //     cout<<"num1 bada h num2 se "<<num1;
-    // }else if(num2>num3){
-    //     cout<<"num 2 se num 3 bada h " <<num2;
-    // }else{
-    //     cout<<"num 3 bada h " <<num3;
-    // }
-    
-    // int day;
-    // cout<<"Enter the day ";
-    // cin>>day;
+    // int day =7;
     // switch (day)
     // {
     // case 1:
-    //     cout<<"Sunday";
+    //     cout<<"sunday";
     //     break;
     // case 2:
-    //     cout<<"Monday";
+    //     cout<<"monday";
     //     break;
     // case 3:
-    //     cout<<"Tuesday";
+    //     cout<<"tuesday";
+    //     break;
+    // case 4:
+    //     cout<<"wednesday";
+    //     break;
+    // case 5:
+    //     cout<<"thursday";
+    //     break;
+    // case 6:
+    //     cout<<"friday";
+    //     break;
+    // case 7:
+    //     cout<<"saturday";
     //     break;
     
     // default:
-    //     cout<<"invalid day";
+    //     cout<<"invalid input";
     //     break;
     // }
 
-    // string number[3]={"deepak","deep","deepu"};
-    // for (int i = 0; i < 3; i++)
+    // int age=59;
+    // if (age>=60)
     // {
-    //     cout<<number[i]<<endl;
+    //     cout<<"Sinor";
     // }
-    // char name[7]="Deepak";
-    // cout<<name;
+    // else if (age>=20 && age<=59)
+    // {
+    //     cout<<"Teenager";
+    // }else if (age>=13 && age<=19)
+    // {
+    //     cout<<"Adult";
+    // }else{
+    //     cout<<"Child";
+    // }
+    
     // int arr[5]={1,2,3,4,5};
-    // int arr1[]={1,2,3,4,5,6,7,8,9};
-    // arr1[3]=3;
-    // cout<<arr1[3];
-
-    // int arr[5];
     // for (int i = 0; i < 5; i++)
     // {
-    //     cin>>arr[i];
+    //     cout<<arr[i]<<endl;
     // }
 
-    // int matrix[2][3]={
-    //     {1,2,3},
-    //     {4,5,6}
-    // };
-    // cout<<matrix[1][2];
-
-    // char name[10];
-    // cin>>name;
+    // char name[10]="Deepak";
     // cout<<name;
     
-    // string name ="my name is deepak";
-    // cout<<name.at(2);
+    // string name ;
+    // cout<<"Enter the name ";
+    // cin>>name;
+    // cout<<"my name is "<<name;
+
     
-    // for (int i = 10; i >= 1; i--)
-    // {
-    //     cout<<i<<endl;
-    // }
-    // for (int i = 0; i < 10; i+=2)
-    // {
-    //     cout<<i<<endl;
-    // }
-    // int i = 1;
-    // while (i<10)
-    // {
-    //     cout<<i<<endl;
-    //     i++;
-    // }
-    
-    
+
     
     
 
-    return 0;
 }
+
