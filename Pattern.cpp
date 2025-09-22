@@ -1,43 +1,44 @@
 #include<iostream>
 using namespace std;
-void printStart(int n){
-    for (int i = 0; i < n; i++)
-    {
-      for (int j = 0; j < i; j++)
-      {
-        cout<<" ";
-      }
-      for (int k = 0; k < 2*n -(2*i+1); k++)
-      {
-        cout<<"*";
-      }
-      for (int j = 0; j <i; j++)
-      {
-        cout<<" ";
-      }
-      cout<<endl;
+// void printStart(int n){
+//     for (int i = 0; i < n; i++)
+//     {
+//       for (int j = 0; j < i; j++)
+//       {
+//         cout<<" ";
+//       }
+//       for (int k = 0; k < 2*n -(2*i+1); k++)
+//       {
+//         cout<<"*";
+//       }
+//       for (int j = 0; j <i; j++)
+//       {
+//         cout<<" ";
+//       }
+//       cout<<endl;
         
-    }
+//     }
     
-}
+// }
 void printStart1(int n){
-    for (int i = 0; i < n; i++)
+   int start =1;
+   for (int i = 0; i < n; i++)
+   {
+    if (i%2 ==0)
     {
-      for (int j = 0; j < n-i-1; j++)
-      {
-        cout<<" ";
-      }
-      for (int k = 0; k < 2*i+1; k++)
-      {
-        cout<<"*";
-      }
-      for (int j = 0; j < n-i-1; j++)
-      {
-        cout<<" ";
-      }
-      cout<<endl;
-        
+      start=1;
+    }else{
+      start=0;
     }
+    for (int j = 0; j <=i; j++)
+    {
+      cout<<start;
+      start=1-start;
+    }
+    cout<<endl;
+    
+   }
+   
     
 }
 // void printStart(int n){
@@ -89,6 +90,6 @@ int main(int argc, char const *argv[])
     int n;
     cin>>n;
     printStart1(n);
-    printStart(n);
+    // printStart(n);
     return 0;
 }
