@@ -61,7 +61,6 @@ int main(int argc, char const *argv[])
     //     }
         
     // }
-    
     int n;
     cin>>n;
     for (int i = 1; i <=n; i++)
@@ -72,9 +71,6 @@ int main(int argc, char const *argv[])
         }else{
             cout<<"P"<<endl;
         }
-        
     }
-    
-    
     return 0;
 }
