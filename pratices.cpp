@@ -5,22 +5,37 @@ using namespace std;
 #include<stack>
 #include<queue>
 #include<map>
+#include<set>
+#include<unordered_set>
 
 int main(int argc, char const *argv[])
 {
-    map<string,int>p={{"Deep",1},{"dee",2}};
-    p.insert({"ddd",3});
-    p.emplace("Dd",33);
-    // p.erase("Deep");
-    if (p.find("Deep")!=p.end())
-    {
-        cout<<"found";
-    }
+    // unordered_set<int>s;
+    // s.insert(1);
+    // s.insert(2);
+    // s.insert(3);
+    // s.insert(4);
+    // s.insert(5);
+    // s.insert(5);
+    // cout<<*s.upper_bound(4);
+    // cout<<*s.lower_bound(4);
+    // for(int it:s){
+    //     cout<<it<<" ";
+    // }
+    // multimap<string,int>p={{"Deep",1},{"dee",2}};
+    // p.insert({"ddd",3});
+    // p.emplace("Dd",33);
+    // p.emplace("dee",1);
+    // // p.erase("Deep");
+    // if (p.find("Deep")!=p.end())
+    // {
+    //     cout<<"found";
+    // }
     
-    // cout<<p.count("dee")<<endl;
-    for(auto it:p){
-        cout<<it.first<<" "<<it.second<<endl;
-    }
+    // // cout<<p.count("dee")<<endl;
+    // for(auto it:p){
+    //     cout<<it.first<<" "<<it.second<<endl;
+    // }
 
     
     // priority_queue<int,vector<int>, greater<int>>p;
