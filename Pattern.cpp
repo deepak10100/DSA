@@ -268,7 +268,7 @@ void printStar19(int n)
    
    for (int s = 1; s <= 2*(n-i); s++)
    {
-    cout<<" ";
+    cout<<"-";
    }
    
     for (int j = i; j >= 1; j--)
