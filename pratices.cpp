@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
         bollen= false;
         return 0;
     }
-    for (int i = 2; i <=n; i++)
+    for (int i = 2; i <n; i++)
     {
         if (n%i==0)
         {
