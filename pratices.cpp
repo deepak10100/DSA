@@ -1,33 +1,23 @@
 #include<iostream>
 using namespace std;
+void print1(int n){
+    for (int i = 1; i <=n; i++)
+    {
+        for (int j = 1; j <=n-i+1; j++)
+        {
+            cout<<j;
+        }
+       cout<<endl; 
+    } 
+}
+
+
+
 int main(int argc, char const *argv[])
 {
     int n;
+    cout<<"Enter the Number: ";
     cin>>n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        cin>>arr[i];
-    }
-    for (int i = 0; i < n-1; i++)
-    {
-        int minindex=i;
-        for (int j = i+1; j < n; j++)
-        {
-           if (arr[j]<arr[minindex])
-           {
-            minindex=j;
-           }
-        }
-        swap(arr[minindex],arr[i]);
-    }
-    
-    //printArray
-    for (int i = 0; i < n; i++)
-    {
-        cout<<arr[i]<<" ";
-    }
-    
-    
+    print1(n);
     return 0;
 }
