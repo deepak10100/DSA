@@ -1,26 +1,21 @@
 #include<iostream>
 using namespace std;
 void print1(int n){
-    for (int i = 1; i <=n; i++)
+    int count=1;
+    for (int i = 1; i <= n; i++)
     {
+        char ch='A'+i-1;
         for (int j = 1; j <= i; j++)
         {
-            cout<<"*";
-        }
+        cout<<ch;
+       }
+       
+       
         
-        
-       cout<<endl; 
-    } 
-    for (int i = n; i >=1; i--)
-    {
-        for (int j = i; j >= 1; j--)
-        {
-            cout<<"*";
-        }
-        
-        
-       cout<<endl; 
-    } 
+        cout<<endl;
+    }
+    
+    
 }
 
 
