@@ -1,30 +1,31 @@
-#include<iostream>
+#include <iostream>
+#include<math.h>
 using namespace std;
-void print1(int n){
-    int count=1;
-    for (int i = 1; i <= n; i++)
+void print1(int n)
+{
+    int orgn=n;
+    int cnt = 0;
+    while (n > 0)
     {
-        char ch='A'+i-1;
-        for (int j = 1; j <= i; j++)
-        {
-        cout<<ch;
-       }
-       
-       
-        
-        cout<<endl;
+        n = n / 10;
+        cnt++;
     }
-    
-    
+    cout<<cnt;
+    int num=0;
+    while (orgn>0)
+    {
+        orgn=orgn%10;
+         num += pow(cnt,orgn);
+    }
+    cout<<num;
 }
-
-
 
 int main(int argc, char const *argv[])
 {
     int n;
-    cout<<"Enter the Number: ";
-    cin>>n;
+
+    cout << "Enter the Number: ";
+    cin >> n;
     print1(n);
     return 0;
 }
