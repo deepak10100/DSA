@@ -1,5 +1,4 @@
 #include<iostream>
-#include<map>
 using namespace std;
 int main(int argc, char const *argv[])
 {
@@ -10,24 +9,22 @@ int main(int argc, char const *argv[])
     {
         cin>>arr[i];
     }
-    
-    map<int,int>mpp;
+    for (int j = 0; j < n; j++)
+    {
+        for (int k = 0; k < n-j; k++)
+        {
+           if (arr[k]>arr[k+1])
+           {
+            swap(arr[k],arr[k+1]);
+           }
+        }
+       
+        
+    }
     for (int i = 0; i < n; i++)
     {
-        mpp[arr[i]]+=1;
+        cout<<arr[i]<<" ";
     }
-    int q;
-    cin>>q;
-    while (q--)
-    {
-        int number;
-        cin>>number;
-        cout<<mpp[number];
-    }
-    
-    
-
-    
     
     
     
