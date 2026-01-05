@@ -1,13 +1,33 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+// void hello(){
+//   cout<<"Deepak";
+// }
+// int square(int x){
+//   return x*x;
+// }
+// int add(int a, int b){
+//   return a+b;
+// }
 int main(int argc, char const *argv[])
 {
-  string food = "Pizza";
-  string *meat = &food;
-  *meat="Number";
+  int arr[4]={1,2,3,4};
+  cout<<arr[3];
+  // for (int i = 0; i < 4; i++)
+  // {
+  //   cout<<arr[i]<<endl;
+  // }
+  
+  // int result = add(1,2);
+// hello();
+// int result = square(5);
+// cout<<result;
+  // string food = "Pizza";
+  // string *meat = &food;
+  // *meat="Number";
   // meat = "Burger";
-  cout<<*meat;
+  // cout<<*meat;
   // cout<<meat;
   // string letter[2][4]={
   //   {"A","B","c","D"},
@@ -35,7 +55,13 @@ int main(int argc, char const *argv[])
 //   cout<<cars[i]<<" ";
 //  }
  
+// cout<<"Deepak";
+// int num=1;
+// int num2=23;
+// // cout<<"Enter the number ";
+// swap(num,num2);
+// cout<<"Enter number is num2 " <<num <<endl;
 
-  
+// cout<<"You Entered number is "<<num;
   return 0;
 }
