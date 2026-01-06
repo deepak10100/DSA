@@ -1,6 +1,27 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+class Employee{
+private:
+  string name;
+  float salary;
+public:
+  Employee(string name, float salary){
+    this->name=name;
+    this->salary=salary;
+  }
+  string getName(){return name;}
+  float getSalary(){return salary;}
+
+  void setName(string name){this->name=name;}
+  void setSalary(float salary){this->salary=salary;}
+
+  void displayDetails(){
+    cout<<"Employee "<<name<<endl;
+    cout<<"Salary "<<salary<<endl;
+  }
+
+};
 // void hello(){
 //   cout<<"Deepak";
 // }
@@ -12,8 +33,16 @@ using namespace std;
 // }
 int main(int argc, char const *argv[])
 {
-  int arr[4]={1,2,3,4};
-  cout<<arr[3];
+  Employee emp("Geek",100.0f);
+  emp.displayDetails();
+//  int x =10;
+//  int &add=x;
+//  cout<<"the value : "<<&x<<endl;
+//  cout<<"add : "<<&add<<endl;
+//  cout<<"value: "<<add<<endl;
+
+  // int arr[4]={1,2,3,4};
+  // cout<<arr[3];
   // for (int i = 0; i < 4; i++)
   // {
   //   cout<<arr[i]<<endl;
