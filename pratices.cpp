@@ -1,20 +1,45 @@
 #include<iostream>
 using namespace std;
-union employee
-{
-  int num;
-  char ch;
-  float salary;
-};
-
+// union employee
+// {
+//   int num;
+//   char ch;
+//   float salary;
+// };
+// void swap(int *a, int *b){
+//   int temp =*a;
+//   *b = *a;
+//   *b=temp;
+// }
+// void swap(int &a, int &b){
+//   int temp = a;
+//   a = b;
+//   b=temp;
+// }
+// int sum(int a, int b=7){
+//   return a+b;
+// }
+int fac(int n){
+  if (n<2)
+  {
+    return 1;
+  }
+  return fac(n-2)+fac(n-1);
+}
 int main(int argc, char const *argv[])
 {
-  union employee deep;
-  deep.num=12;
-  deep.ch=34;
-  deep.salary=45;
-  cout<<deep.salary;
-  cout<<deep.ch;
+  cout<<fac(5);
+  // cout<<sum(8);
+  // int x =4;
+  // int y=7;
+  // swap(x,y);
+  // cout<<x<<" "<<y;
+  // union employee deep;
+  // deep.num=12;
+  // deep.ch=34;
+  // deep.salary=45;
+  // cout<<deep.salary;
+  // cout<<deep.ch;
 
 //   int marks[] = {23, 45, 56, 89};
 //   int *ptr = marks;
