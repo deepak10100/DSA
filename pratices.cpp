@@ -1,67 +1,36 @@
-// #include<iostream>
-// using namespace std;
-// class Shop{
-//     int itemid[100];
-//     int price[100];
-//     int counter;
-//   public:
-//     void initCounter(){
-//       counter=0;
-//     }
-//     void setItem();
-//     void displayItems();
-
-// };
-// void Shop::setItem(){
-//   cout<<"Enter the Id ";
-//   cin>>itemid[counter];
-//   cout<<"Enter the Price ";
-//   cin>>price[counter];
-//   counter++;
-
-// }
-// void Shop::displayItems(){
-//   for (int i = 0; i < counter; i++)
-//   {
-//     cout<<"Your Product Id: "<<itemid[i]<<" Your Product Price "<<price[i]<<endl;
-//   }
-
-// }
-// int main(int argc, char const *argv[])
-// {
-//   Shop dukkan;
-//   dukkan.initCounter();
-//   dukkan.setItem();
-//   dukkan.setItem();
-//   dukkan.setItem();
-//   dukkan.displayItems();
-//   return 0;
-// }
-
-#include <iostream>
+#include<iostream>
 using namespace std;
-class Employee
-{
-    int id;
-    int salary;
-  public : 
-    void setId()
-      {
-        cout << "Enter the Id ";
-        cin >> id;
-      }
-    void printData(){
-      cout<<"Id is "<<id;
-    }
-};
 int main(int argc, char const *argv[])
 {
-  Employee fb[4];
-  for (int i = 0; i < 4; i++)
+  string str;
+  
+  cout<<"Enter the str ";
+    cin>>str;
+  for (int i = 0; i < str.length(); i++)
   {
-    fb[i].setId();
-    fb[i].printData();
+     if (str[i]<'5')
+  {
+    str[i]='0';
+  }else
+  {
+    str[i]='1';
   }
+}
+cout<<str;
+  
   
   return 0;
 }
+// #include<iostream>
+// using namespace std;
+// int main(int argc, char const *argv[])
+// {
+//   int sum =0;
+//   int strs[3]={1,2,2};
+//   for (int i = 0; i < 3; i++)
+//   {
+//     sum=sum + strs[i]*strs[i];
+//   }
+//   cout<<sum;
+//   return 0;
+// }
