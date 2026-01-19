@@ -1,38 +1,89 @@
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(int argc, char const *argv[])
+// {
+//   vector<int>list={34, 15, 88, 2};
+//   int smallNum=list[0];
+  
+  
+//   for (int i = 1; i < list.size(); i++)
+//   {
+//     if (smallNum>list[i])
+//     {
+//         smallNum=list[i];
+//     }
+    
+//   }
+//   cout<<smallNum;
+  
+  
+//   return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(int argc, char const *argv[])
+// {
+//   int num;
+//   cin>>num;
+//   int sum=0;
+//   for (int i = 1; i <= num; i++)
+//   {
+//     sum=sum+i;
+//   }
+//   cout<<sum;
+  
+//   return 0;
+// }
+
+
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(int argc, char const *argv[])
+// {
+//   int n;
+//   vector<int> newArray;
+//  for (int i = n; i >= 1; i--)
+//  {
+//     newArray.push_back(i);
+//  }
+
+//   return 0;
+// }
+// #include<iostream>
+// using namespace std;
+// int main(int argc, char const *argv[])
+// {
+//   int n,m;
+//   cin>>n;
+//   cin>>m;
+//   if (n<0)
+//   {
+//     n=0;
+//   }
+//   if (m<0)
+//   {
+//     m=0;
+//   }
+//   cout<<m*n;
+  
+  
+//   return 0;
+// }
+
 #include<iostream>
 using namespace std;
-#include<vector>
 int main(int argc, char const *argv[])
 {
-  vector<int>values ={1,2,3};
-  vector<int>newArray;
- 
-  for(int vc:values){
-    newArray.push_back(vc+vc);
+  int n=-5;
+  if (n<0)
+  {
+    return n;
+  }else{
+    return -n ;
   }
-  for(int nw:newArray){
-    cout<<nw<<", ";
-    }
-  // int mul=1;
-  // for(int vc:nums){
-  //   mul = mul*vc;
-  // }
- 
-  // cout<<mul;
-//   string str;
-  
-//   cout<<"Enter the str ";
-//     cin>>str;
-//   for (int i = 0; i < str.length(); i++)
-//   {
-//      if (str[i]<'5')
-//   {
-//     str[i]='0';
-//   }else
-//   {
-//     str[i]='1';
-//   }
-// }
-// cout<<str;
   
   
   return 0;
@@ -41,12 +92,14 @@ int main(int argc, char const *argv[])
 // using namespace std;
 // int main(int argc, char const *argv[])
 // {
-//   int sum =0;
-//   int strs[3]={1,2,2};
-//   for (int i = 0; i < 3; i++)
+//   int n;
+//   cin>>n;
+//   string result;
+//   for (int i = 1; i < n; i++)
 //   {
-//     sum=sum + strs[i]*strs[i];
+//     result= result+ to_string(i)+" Sheep...";
 //   }
-//   cout<<sum;
+//   return result;
+  
 //   return 0;
 // }
