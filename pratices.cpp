@@ -23,23 +23,50 @@ using namespace std;
 //       break;
 //     }
 // }
+// string greet(){
+//   return "hello world";
+// }
 int main(int argc, char const *argv[])
 {
 
+
+  string p1;
+  cin>>p1;
+  string p2;
+  cin>>p2;
+  if (p1==p2)
+  {
+    cout<<"draw";
+  }
+  
+  if ((p1=="rock" && p1=="scissors")|| (p1=="rock" && p1=="paper") ||(p1=="paper" && p1=="scissors") )
+  
+  {
+    cout<<"player 1";
+  }else 
+  {
+    cout<<"player 2";
+  }
+  
+ 
+  
+  
+  // greet();
+
   // int arrr[7]={'hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'};
   
-  vector<int>arr = {1, 2, -3, 4, 5};
-  vector<int>res;
-  for (int i = 0; i < arr.size(); i++)
-  {
-   arr[i] *= -1;
-  //  arr[i]=arr[i]*-1;
-        // -3   = -3 * -1;=+3
-  }
-  for (int i = 0; i < arr.size(); i++)
-  {
-    cout<<arr[i]<<" ";
-  }
+  // vector<int>arr = {1, 2, -3, 4, 5};
+  // vector<int>res;
+  // for (int i = 0; i < arr.size(); i++)
+  // {
+  //  arr[i] *= -1;
+  // //  arr[i]=arr[i]*-1;
+  //       // -3   = -3 * -1;=+3
+  // }
+  // for (int i = 0; i < arr.size(); i++)
+  // {
+  //   cout<<arr[i]<<" ";
+  // }
   
   
   // for (int i = 0; i < arr.size(); i++)
