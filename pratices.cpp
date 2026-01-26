@@ -4,14 +4,41 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-  int repeat=5;
-  string str;
-  string res="";
-  for (int i = 0; i < repeat; i++)
+  
+  
+  
+  vector<pair<int, int>> data={{18, 20},{45, 2},{61, 12},{37, 6},{21, 21},{78, 9}};
+  vector<string>res;
+  for (int i = 0; i < data.size(); i++)
   {
-    res+= str;
+    int age =data[i].first;
+    int handicap =data[i].second;
+    if (age >=55 && handicap >7)
+    {
+      res.push_back("Senior");
+    }else{
+      res.push_back("Open");
+    }
   }
   return res;
+  
+
+  // int number=4;
+  // if (number%2==0)
+  // {
+  //   return number*8;
+  // }
+  // else{
+  //   return number*9;
+  // }
+  // int repeat=5;
+  // string str;
+  // string res="";
+  // for (int i = 0; i < repeat; i++)
+  // {
+  //   res+= str;
+  // }
+  // return res;
   
   // int num=-1;
   // if (num)
