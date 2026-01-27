@@ -4,23 +4,59 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-  
-  
-  
-  vector<pair<int, int>> data={{18, 20},{45, 2},{61, 12},{37, 6},{21, 21},{78, 9}};
+  // vector<string>str="Deepakmalakar";
+  string str="Deepak malakar";
   vector<string>res;
-  for (int i = 0; i < data.size(); i++)
+  string word ="";
+  for (int i = 0; i < str.size(); i++)
   {
-    int age =data[i].first;
-    int handicap =data[i].second;
-    if (age >=55 && handicap >7)
+    if (str[i]==' ')
     {
-      res.push_back("Senior");
-    }else{
-      res.push_back("Open");
+      res.push_back(word);
+      word="";
     }
+    else
+    {
+      word=word+str[i];
+    } 
   }
-  return res;
+
+  res.push_back(word);
+  for (int i = 0; i < res.size(); i++)
+  {
+    cout<<res[i]<<endl;
+  }
+  
+  // string str ="Hello World!";
+
+  // string res="";
+  // for (int i = 0; i < str.size(); i++)
+  // {
+  //   if (str[i]!='!')
+  //   {
+  //      res+=str[i];
+  //   }
+  
+  //   // cout<<str[i]<<" ";
+  // }
+  // cout<<res;
+  
+  
+  
+  // vector<pair<int, int>> data={{18, 20},{45, 2},{61, 12},{37, 6},{21, 21},{78, 9}};
+  // vector<string>res;
+  // for (int i = 0; i < data.size(); i++)
+  // {
+  //   int age =data[i].first;
+  //   int handicap =data[i].second;
+  //   if (age >=55 && handicap >7)
+  //   {
+  //     res.push_back("Senior");
+  //   }else{
+  //     res.push_back("Open");
+  //   }
+  // }
+  // return res;
   
 
   // int number=4;
