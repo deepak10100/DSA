@@ -5,27 +5,27 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
   // vector<string>str="Deepakmalakar";
-  string str="Deepak malakar";
-  vector<string>res;
-  string word ="";
-  for (int i = 0; i < str.size(); i++)
-  {
-    if (str[i]==' ')
-    {
-      res.push_back(word);
-      word="";
-    }
-    else
-    {
-      word=word+str[i];
-    } 
-  }
+  // string str="Deepak malakar";
+  // vector<string>res;
+  // string word ="";
+  // for (int i = 0; i < str.size(); i++)
+  // {
+  //   if (str[i]==' ')
+  //   {
+  //     res.push_back(word);
+  //     word="";
+  //   }
+  //   else
+  //   {
+  //     word=word+str[i];
+  //   } 
+  // }
 
-  res.push_back(word);
-  for (int i = 0; i < res.size(); i++)
-  {
-    cout<<res[i]<<endl;
-  }
+  // res.push_back(word);
+  // for (int i = 0; i < res.size(); i++)
+  // {
+  //   cout<<res[i]<<endl;
+  // }
   
   // string str ="Hello World!";
 
@@ -106,6 +106,41 @@ int main(int argc, char const *argv[])
   // }
   
   
+// int num_vowels=0;
+// string inputStr="deepeek";
+// for (int i = 0; i < inputStr.size(); i++)
+// {
+//   if (inputStr[i]=='a' || inputStr[i]=='e' || inputStr[i]=='i' || inputStr[i]=='o' ||inputStr[i]=='u')
+//   {
+//       num_vowels++;
+//   }
+  
+// }
+// return num_vowels;
+
+string nameds="ooxx";
+int countx=0;
+int counto=0;
+for (int i = 0; i < nameds.length(); i++)
+{
+  if (nameds[i]=='x')
+  {
+    countx++;
+  }else if (nameds[i]=='o')
+  {
+    counto++;
+  }
+   
+}
+if (counto==countx)
+{
+  return true;
+}else
+{
+  return false;
+}
+
+
 
   return 0;
 }
