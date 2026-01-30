@@ -118,29 +118,56 @@ int main(int argc, char const *argv[])
 // }
 // return num_vowels;
 
-string nameds="ooxx";
-int countx=0;
-int counto=0;
-for (int i = 0; i < nameds.length(); i++)
-{
-  if (nameds[i]=='x')
-  {
-    countx++;
-  }else if (nameds[i]=='o')
-  {
-    counto++;
-  }
+// string nameds="ooxx";
+// int arr[]={1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15};
+// int count=0;
+// int sumneg=0;
+// for (int i = 0; i < 15; i++)
+// {
+//   if (input[i]>0)
+//   {
+//     count++;
+//   }else if(input[i]<0)
+//   {
+//     sumneg+=input[i];
+//   }
+  
+  
+// }
+// cout<<"cout "<<count<<endl;
+// cout<<"sum "<<sumneg<<endl;
+
+// int counto=0;
+// for (int i = 0; i < nameds.length(); i++)
+// {
+//   if (nameds[i]=='x')
+//   {
+//     countx++;
+//   }else if (nameds[i]=='o')
+//   {
+//     counto++;
+//   }
    
-}
-if (counto==countx)
-{
-  return true;
-}else
-{
-  return false;
-}
+// }
+// if (counto==countx)
+// {
+//   return true;
+// }else
+// {
+//   return false;
+// }
 
-
+string nameed="d  ee p a k";
+string res="";
+for (int i = 0; i < nameed.length(); i++)
+{
+  if (nameed[i]!=' ')
+  {
+    res+=nameed[i];
+  }
+  
+}
+cout<<res;
 
   return 0;
 }
