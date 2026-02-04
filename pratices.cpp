@@ -4,6 +4,8 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
+  string num="123";
+  cout<<stoi(num);
   // vector<string>str="Deepakmalakar";
   // string str="Deepak malakar";
   // vector<string>res;
@@ -157,17 +159,48 @@ int main(int argc, char const *argv[])
 //   return false;
 // }
 
-string nameed="d  ee p a k";
-string res="";
-for (int i = 0; i < nameed.length(); i++)
-{
-  if (nameed[i]!=' ')
-  {
-    res+=nameed[i];
-  }
+// string nameed="d  ee p a k";
+// string res="";
+// for (int i = 0; i < nameed.length(); i++)
+// {
+//   if (nameed[i]!=' ')
+//   {
+//     res+=nameed[i];
+//   }
   
-}
-cout<<res;
+// }
+// cout<<res;
+
+// string named="ATTGC";
+// string res="";
+// int flower1=2;
+// int flower2 = 4;
+// if (flower1%2 == 0 && flower2%2 ==0)
+// {
+//   cout<<"false" <<flower1 <<flower2;
+// }else{
+//   cout<<"true";
+// }
+
+// for (int i = 0; i < named.length(); i++)
+// {
+//   // cout<<named[i]<<" ";
+//   if (named[i]=='A')
+//   {
+//      res+='T';
+//   }else if (named[i]=='G')
+//   {
+//     res+='C';
+//   } else if (named[i]=='T')
+//   {
+//     res+='A';
+//   }else if (named[i]=='C')
+//   {
+//     res+='G';
+//   }
+
+// }
+// return res;
 
   return 0;
 }
