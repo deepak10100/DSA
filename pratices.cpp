@@ -1,11 +1,20 @@
 #include<iostream>
 #include<vector>
-
+#include<algorithm>
 using namespace std;
 int main(int argc, char const *argv[])
 {
-  string num="123";
-  cout<<stoi(num);
+  // string str = "This is an example!";
+  // string word="";
+  // string res="";
+  // reverse(word.begin(),word.end());
+  // res+=word;
+  // cout<<word;
+
+  
+  
+  // string num="123";
+  // cout<<stoi(num);
   // vector<string>str="Deepakmalakar";
   // string str="Deepak malakar";
   // vector<string>res;
