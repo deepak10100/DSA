@@ -4,6 +4,17 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
+ vector<int>x;
+ vector<int>y;
+ vector<int>result;
+//  int z;
+  for (int i = 1; i <= 5; i++)
+  {
+
+    result.push_back(i*x);
+  } 
+  return result;
+  
   // string str = "This is an example!";
   // string word="";
   // string res="";
